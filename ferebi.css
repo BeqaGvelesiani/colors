@@ -36,10 +36,14 @@ h1 {
   text-transform: uppercase;
   font-size: 1rem;
   color: var(--textColor);
+  font-family: sans-serif;
+  height: fit-content;
+  width: fit-content;
+  padding-top: 1.2rem;
 }
 
 button:hover {
-  background-color: rgb(187, 24, 24);
+  color: rgb(141, 140, 72);
 }
 
 .container {
@@ -49,6 +53,7 @@ button:hover {
   width: fit-content;
   margin-left: 0;
   place-items: center;
+  position: relative;
 }
 
 .pallazo-150 {
