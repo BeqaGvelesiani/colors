@@ -1,0 +1,71 @@
+:root {
+  --Bcolor: var(--palazzo-150);
+}
+
+body {
+  --pallazo-150: #e0ceb6;
+  --siena-50: #d9c9bd;
+  --melise-90: #faf0d3;
+  --palazzo-115: #d8cdc1;
+  --marill-60: #e8d9c9;
+  --Ginster-55: #e3d5be;
+  --pallazo-55: #e2d7cd;
+  background-color: var(--Bcolor);
+  margin: 0;
+}
+
+button {
+  width: 150px;
+  height: 10px;
+  background-color: rgb(81, 67, 67);
+  color: #252525;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 1rem auto 0 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding-bottom: 32px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(187, 24, 24);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin-left: 0;
+  place-items: left;
+}
+
+.pallazo-150 {
+  background-color: var(--pallazo-150);
+}
+
+.siena-50 {
+  background-color: var(--siena-50);
+}
+
+.melise-90 {
+  background-color: var(--melise-90);
+}
+
+.palazzo-115 {
+  background-color: var(--palazzo-115);
+}
+
+.marill-60 {
+  background-color: var(--marill-60);
+}
+
+.Ginster-55 {
+  background-color: var(--Ginster-55);
+}
+
+.pallazo-55 {
+  background-color: var(--pallazo-55);
+}
