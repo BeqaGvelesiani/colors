@@ -4,174 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      :root {
-        --Bcolor: var(--palazzo-150);
-      }
-
-      body {
-        --pallazo-150: #e0ceb6;
-        --siena-50: #d9c9bd;
-        --melise-90: #faf0d3;
-        --palazzo-115: #d8cdc1;
-        --marill-60: #e8d9c9;
-        --Ginster-55: #e3d5be;
-        --pallazo-55: #e2d7cd;
-        --textColor: #472c2c00;
-        background-color: var(--Bcolor);
-        margin: 0;
-      }
-
-      button {
-        width: 150px;
-        height: 10px;
-        background-color: rgb(81, 67, 67);
-        color: #252525;
-        padding: 20px;
-        border-radius: 8px;
-        margin: 1rem auto 0 1rem;
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 700;
-        border: none;
-        padding-bottom: 32px;
-        cursor: pointer;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        text-transform: uppercase;
-        font-size: 1rem;
-        color: var(--textColor);
-      }
-
-      button:hover {
-        background-color: rgb(187, 24, 24);
-      }
-
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: fit-content;
-        width: fit-content;
-        margin-left: 0;
-        place-items: center;
-      }
-
-      .pallazo-150 {
-        background-color: var(--pallazo-150);
-      }
-
-      .siena-50 {
-        background-color: var(--siena-50);
-      }
-
-      .melise-90 {
-        background-color: var(--melise-90);
-      }
-
-      .palazzo-115 {
-        background-color: var(--palazzo-115);
-      }
-
-      .marill-60 {
-        background-color: var(--marill-60);
-      }
-
-      .Ginster-55 {
-        background-color: var(--Ginster-55);
-      }
-
-      .pallazo-55 {
-        background-color: var(--pallazo-55);
-      }
-    </style>
+    <link rel="stylesheet" href="ferebi.css" />
     <title>ferebi</title>
   </head>
   <body>
     <div id="" class="container">
-      <button id="pallazo-150" class="pallazo-150">pallazo-150</button>
-      <h1 id="Hpallazo150" class="h1"></h1>
-      <button id="siena-50" class="siena-50">siena-50</button>
-      <h1 id="Hsiena50" class="h1"></h1>
-      <button id="melise-90" class="melise-90">melise-90</button>
-      <h1 id="Hmelise90" class="h1"></h1>
-      <button id="palazzo-115" class="palazzo-115">palazzo-115</button>
-      <h1 id="Hpalazzo115" class="h1"></h1>
-      <button id="marill-60" class="marill-60">marill-60</button>
-      <h1 id="Hmarill60" class="h1"></h1>
-      <button id="Ginster-55" class="Ginster-55">Ginster-55</button>
-      <h1 id="HGinster55" class="h1"></h1>
-      <button id="pallazo-55" class="pallazo-55">pallazo-55</button>
-      <h1 id="Hpallazo55" class="h1"></h1>
+      <button id="C1" class="pallazo-150">pallazo-150</button>
+      <h1 id="CId1" class="h1"></h1>
+
+      <button id="C2" class="siena-50">siena-50</button>
+      <h1 id="CId2" class="h1"></h1>
+
+      <button id="C3" class="melise-90">melise-90</button>
+      <h1 id="CId3" class="h1"></h1>
+
+      <button id="C4" class="palazzo-115">palazzo-115</button>
+      <h1 id="CId4" class="h1"></h1>
+
+      <button id="C5" class="marill-60">marill-60</button>
+      <h1 id="CId5" class="h1"></h1>
+
+      <button id="C6" class="Ginster-55">Ginster-55</button>
+      <h1 id="CId6" class="h1"></h1>
+
+      <button id="C7" class="pallazo-55">pallazo-55</button>
+      <h1 id="CId7" class="h1"></h1>
+
     </div>
-    <script defer>
-      const pallazo150 = document.getElementById("pallazo-150");
-      const siena50 = document.getElementById("siena-50");
-      const melise90 = document.getElementById("melise-90");
-      const palazzo115 = document.getElementById("palazzo-115");
-      const marill60 = document.getElementById("marill-60");
-      const Ginster55 = document.getElementById("Ginster-55");
-      const pallazo55 = document.getElementById("pallazo-55");
-
-      const root = document.querySelector(":root");
-
-      const Hpallazo150 = document.getElementById("Hpallazo150");
-      const Hsiena50 = document.getElementById("Hsiena50");
-      const Hmelise90 = document.getElementById("Hmelise90");
-      const Hpalazzo115 = document.getElementById("Hpalazzo115");
-      const Hmarill60 = document.getElementById("Hmarill60");
-      const HGinster55 = document.getElementById("HGinster55");
-      const Hpallazo55 = document.getElementById("Hpallazo55");
-
-      pallazo150.addEventListener("click", () => {
-        root.style.setProperty("--textCOlor", "#25252500");
-        root.style.setProperty("--Bcolor", "#e0ceb6");
-        Hpallazo150.innerText = "#e0ceb6";
-        Hpallazo150.style.color = "#252525";
-      });
-
-      siena50.addEventListener("click", () => {
-        root.style.setProperty("--textCOlor", "#25252500");
-        root.style.setProperty("--Bcolor", "#d9c9bd");
-        Hsiena50.innerText = "#d9c9bd";
-        Hsiena50.style.color = "#252525";
-      });
-
-      melise90.addEventListener("click", () => {
-        root.style.setProperty("--textCOlor", "#25252500");
-        root.style.setProperty("--Bcolor", "#faf0d3");
-        Hmelise90.innerText = "#faf0d3";
-        Hmelise90.style.color = "#252525";
-      });
-
-      palazzo115.addEventListener("click", () => {
-        root.style.setProperty("--textCOlor", "#25252500");
-        root.style.setProperty("--Bcolor", "#d8cdc1");
-        Hpalazzo115.innerText = "#d8cdc1";
-        Hpalazzo115.style.color = "#252525";
-      });
-
-      marill60.addEventListener("click", () => {
-        root.style.setProperty("--textCOlor", "#25252500");
-        root.style.setProperty("--Bcolor", "#e8d9c9");
-        Hmarill60.innerText = "#e8d9c9";
-        Hmarill60.style.color = "#252525";
-      });
-
-      Ginster55.addEventListener("click", () => {
-        root.style.setProperty("--textCOlor", "#25252500");
-        root.style.setProperty("--Bcolor", "#e3d5be");
-        HGinster55.innerText = "#e3d5be";
-        HGinster55.style.color = "#252525";
-      });
-
-      pallazo55.addEventListener("click", () => {
-        root.style.setProperty("--textCOlor", "#25252500");
-        root.style.setProperty("--Bcolor", "#e2d7cd");
-        Hpallazo55.innerText = "#e2d7cd";
-        Hpallazo55.style.color = "#252525";
-      });
-    </script>
+    <script src="color.js" defer></script>
   </body>
 </html>
