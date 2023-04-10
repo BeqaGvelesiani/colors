@@ -16,6 +16,14 @@ const CId5 = document.getElementById("CId5");
 const CId6 = document.getElementById("CId6");
 const CId7 = document.getElementById("CId7");
 
+C1.addEventListener("click", () => click("e0ceb6", CId1));
+C2.addEventListener("click", () => click("d9c9bd", CId2));
+C3.addEventListener("click", () => click("faf0d3", CId3));
+C4.addEventListener("click", () => click("d8cdc1", CId4));
+C5.addEventListener("click", () => click("e8d9c9", CId5));
+C6.addEventListener("click", () => click("e3d5be", CId6));
+C7.addEventListener("click", () => click("e2d7cd", CId7));
+
 function clear() {
   CId1.innerText = "";
   CId2.innerText = "";
@@ -26,46 +34,8 @@ function clear() {
   CId7.innerText = "";
 }
 
-
-
-C1.addEventListener("click", () => {
+function click(color, A) {
   clear();
-  root.style.setProperty("--Bcolor", "#e0ceb6");
-  CId1.innerText = "#e0ceb6";
-});
-
-C2.addEventListener("click", () => {
-  clear();
-  root.style.setProperty("--Bcolor", "#d9c9bd");
-  CId2.innerText = "#d9c9bd";
-});
-
-C3.addEventListener("click", () => {
-  clear();
-  root.style.setProperty("--Bcolor", "#faf0d3");
-  CId3.innerText = "#faf0d3";
-});
-
-C4.addEventListener("click", () => {
-  clear();
-  root.style.setProperty("--Bcolor", "#d8cdc1");
-  CId4.innerText = "#d8cdc1";
-});
-
-C5.addEventListener("click", () => {
-  clear();
-  root.style.setProperty("--Bcolor", "#e8d9c9");
-  CId5.innerText = "#e8d9c9";
-});
-
-C6.addEventListener("click", () => {
-  clear();
-  root.style.setProperty("--Bcolor", "#e3d5be");
-  CId6.innerText = "#e3d5be";
-});
-
-C7.addEventListener("click", () => {
-  clear();
-  root.style.setProperty("--Bcolor", "#e2d7cd");
-  CId7.innerText = "#e2d7cd";
-});
+  root.style.setProperty("--Bcolor", `#${color}`);
+  A.innerText = `#${color}`;
+}
